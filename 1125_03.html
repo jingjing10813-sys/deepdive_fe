@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>가장 좋아하는 과목을 모두 고르세요</h1>
+    <ul>
+        <li>
+            <label><input type="checkbox" name="favorite_subject">HTML</label>
+        </li>
+        <li>
+            <label><input type="checkbox" name="favorite_subject">CSS</label>
+        </li>
+        <li>
+            <label><input type="checkbox" name="favorite_subject">Java</label>
+        </li>
+    </ul>
+
+    <!--라디오버튼은 한번누르면 꺼지지 않음, 
+    하나의 버튼만 눌리게 하려면 name="같은이름"을 추갛야함-->
+    <h1>수강하실 과목을 한개만 고르세요</h1>
+    <ul>
+        <label><input type="radio" name="sbject">Figma</label>
+    </ul>
+    <ul>
+        <label><input type="radio" name="sbject">Cursor</label>
+    </ul>
+    <ul>
+        <label><input type="radio" name="sbject">MCP</label>
+    </ul>
+
+    <!--label 태그 연결하는 이유 접근성을 넓히려고 글자만 눌러도 버튼이 활성화하도록 연결
+    id 태그는 서로 다른 고요의 이름이어야함-->
+    <table>
+        <tr>
+            <th scope="row"><label for="contact_title">제목</label></th>
+            <td><input type="text" placeholder="제목을 입력하세요" id="contact_title"></td>
+        </tr>
+        <tr>
+            <th scope="row"><label for="contact_message">내용</label></th>
+            <td>
+                <textarea placeholder="문의할 내용을 입력하세요" id="contact_message"></textarea>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>table</title>
+    <style>
+        table {
+            border-spacing: 0px;
+            border-collapse: collapse;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td> 
+        </tr>
+        <tr>
+            <td>D</td> 
+            <td>E</td> 
+            <td>F</td> 
+        </tr>
+    </table>
+    <hr>
+    <table>
+        <tr>
+            <td colspan="3">A</td>
+           
+        </tr>
+        <tr>
+            <td>D</td> 
+            <td>E</td> 
+            <td>F</td> 
+        </tr>
+    </table>
+    <hr>
+    <table>
+        <tr>
+            <td rowspan="2">A</td>
+            <td>B</td>
+            <td>C</td> 
+        </tr>
+        <tr>
+            <td>E</td> 
+            <td>F</td> 
+        </tr>
+    </table>
+      <hr>
+
+      <!--캡션은 테이블태그 바로밑에 !-->
+      <!--제목에는 th -> 중앙정렬 , 글자 굵어짐 /접근성을 위해 socpe 추가-->
+    <table>
+        <caption>RESUME</caption>
+        <tr>
+            <td rowspan="3"><img src="./images/google.svg"></td>
+            <th scope="row">이름</th>
+            <td>-</td>
+            <th scope="row">mbti</th>
+            <td>-</td>
+
+        </tr>
+        <tr>
+            <th scope="row">주소</th> 
+            <td colspan="3">-</td> 
+        
+        </tr>
+         <tr>
+            <th scope="row">전화번호</th> 
+            <td>-</td> 
+            <th scope="row">생일</th> 
+            <td>-</td> 
+        </tr>
+    </table>
+</body>
+</html>
