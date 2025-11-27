@@ -1,0 +1,15 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="300" fill="#E0FFFF" rx="20"/>
+  <!-- Ears -->
+  <polygon points="80,70 120,130 60,130" fill="#FF7F50"/>
+  <polygon points="220,70 180,130 240,130" fill="#FF7F50"/>
+  <!-- Face -->
+  <path d="M70 130 Q150 250 230 130 Z" fill="#FF7F50"/>
+  <path d="M70 130 Q150 250 150 200 L150 130 Z" fill="#FFFFFF" opacity="0.8"/>
+  <path d="M230 130 Q150 250 150 200 L150 130 Z" fill="#FFFFFF" opacity="0.8"/>
+  <!-- Eyes -->
+  <path d="M120 160 L140 165" stroke="#333" stroke-width="3"/>
+  <path d="M180 160 L160 165" stroke="#333" stroke-width="3"/>
+  <!-- Nose -->
+  <circle cx="150" cy="190" r="6" fill="#333"/>
+</svg>

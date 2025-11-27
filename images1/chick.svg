@@ -1,0 +1,15 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="300" fill="#F0F8FF" rx="20"/>
+  <!-- Body -->
+  <circle cx="150" cy="160" r="90" fill="#FFFACD"/>
+  <!-- Eyes -->
+  <circle cx="120" cy="150" r="7" fill="#333"/>
+  <circle cx="180" cy="150" r="7" fill="#333"/>
+  <!-- Beak -->
+  <polygon points="140,165 160,165 150,180" fill="#FFB347"/>
+  <!-- Cheeks -->
+  <circle cx="100" cy="170" r="10" fill="#FFB7B2" opacity="0.5"/>
+  <circle cx="200" cy="170" r="10" fill="#FFB7B2" opacity="0.5"/>
+  <!-- Hair -->
+  <path d="M150 70 Q160 50 170 75" stroke="#FFFACD" stroke-width="10" fill="none"/>
+</svg>

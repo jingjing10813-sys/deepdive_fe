@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #f3f4f5;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 500px;
+            border: 1px solid #333;
+            padding: 20px;
+            border-radius: 20px;
+            line-height: 2;
+            margin: 50px auto;
+            font-size: 20px;
+            font-family: sans-serif;
+            position: relative;
+        }
+
+        .btn {
+            background-color: rgb(114, 114, 114);
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+        }
+
+        .btn-top {
+            background-color: rgb(114, 114, 114);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-decoration: none;
+            position: fixed;
+            right:50px;
+            bottom: 50px;
+        }
+
+        .btn-left {
+            background-color: rgba(0, 0, 0, 0.7);
+            border: none;
+            position: absolute;
+            left: -50px;
+            top: calc(50% - 50px);
+            z-index: 1;
+
+        }
+        .btn-left2 {
+            background-color: rgba(255, 0, 0, 1);
+            border: none;
+            position: absolute;
+            left: -30px;
+            top: calc(50% - 50px);
+            z-index: 2;
+
+        }
+        .btn-right {
+            background-color: rgba(0, 0, 0, 0.7);
+            border: none;
+            position: absolute;
+            right: -50px;
+            top: calc(50% - 50px);
+        }
+        .btn-center {
+            background-color: rgba(0, 0, 0, 0.7);
+            border: none;
+            position: absolute;
+            left: calc(50% - 50px);
+            top: calc(50% - 50px);
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae exercitationem sapiente possimus totam unde
+            nihil
+            quae vel voluptate, in autem illo eveniet deserunt quos enim! Molestias consectetur odit qui minus.
+            Consectetur assumenda vero deserunt, vitae tempore dolor officia dolorem odit eum velit deleniti iusto
+            delectus
+            iure
+            voluptatem similique ea fugiat voluptas quidem itaque sapiente suscipit repellat? Nesciunt temporibus
+            recusandae
+            deserunt.
+        </p>
+        
+
+        <a href="#" class="btn btn-top">TOP</a>
+        <button type="button" class="btn-left2 btn">LEFT2</button>
+        <button type="button" class="btn-left btn">LEFT</button>
+        <button type="button" class="btn-right btn">RIGHT</button>
+        <button type="button" class="btn-center btn">CENTER</button>
+    </div> 
+      
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+:root {
+  --color-primary: #00c389;
+  --color-neutral-900: #1b1e21; /* title */
+  --color-neutral-800: #252929;
+  --color-neutral-300: #a7acac; /* caption */
+  --color-border-200: #f0f5f6;
+}
+
+body {
+  font-family: "Pretendard", sans-serif;
+  color: var(--color-neutral-800);
+  line-height: 1.2;
+  letter-spacing: -0.1px;
+}
+
+.page-header {
+  background-color: #fff;
+}
+
+.page-header .logo {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.page-header .inner {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  height: 64px;
+}
+
+.page-main {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.goods-container {
+}
+
+.goods-container header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2em;
+}
+.goods-container .title {
+  font-size: 24px;
+}
+
+.goods-container .more {
+  color: var(--color-neutral-300);
+  font-size: 14px;
+  background: url("../images/icons/arrow-right.svg") no-repeat right center/auto
+    14px;
+  padding-right: 20px;
+}
+
+.goods-container .goods-list {
+  display: flex;
+  gap: 20px;
+}
+
+.goods-container .goods-list li {
+  width: 194px;
+}
+
+.goods-container .goods-list .thumb-container {
+  height: 192px;
+  border-radius: 3px;
+  overflow: hidden;
+  display: block;
+  border: 1px solid var(--color-border-200);
+}
+
+.thumb-wrap {
+  position: relative;
+}
+
+.thumb-wrap .btn-like {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+.thumb-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.goods-container .info {
+  padding: 1em 0;
+}
+
+.goods-container .info .author {
+  color: var(--color-neutral-300);
+  font-size: 12px;
+}
+
+.goods-container .info .name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.5;
+}
+
+.goods-container .info .price {
+  margin-top: 0.3em;
+}
+.goods-container .info .price strong {
+  font-size: 18px;
+  font-weight: 600;
+  margin-right: 3px;
+  letter-spacing: 0.3px;
+}
+
+.goods-container .info .price em {
+  font-size: 12px;
+}
+
+.banner-container {
+  display: flex;
+  gap: 20px;
+  margin-top: 5em;
+}
+
+.banner-container a {
+  flex: 1;
+  border-radius: 10px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding: 0 1.5em;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  background: no-repeat right 10px center/auto 80px;
+}
+
+.banner-container span {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.banner-container span::after {
+  content: "";
+  background: url("../images/icons/arrow-right.svg") no-repeat center center;
+  width: 14px;
+  height: 14px;
+}
+
+.banner-container a:first-child {
+  background-color: #faf7e1;
+  background-image: url("../images/irangi_9.png");
+}
+.banner-container a:last-child {
+  background-color: #f2ebff;
+  background-image: url("../images/irangi_7.png");
+}
+
+

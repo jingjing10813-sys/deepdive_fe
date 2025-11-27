@@ -1,0 +1,79 @@
+body {
+    font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+    background-color: #fff;
+    color: #000000;
+}
+
+.header {
+    background-color: #fff;
+    width: 100%;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.header-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 20px;
+}
+
+.logo span {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ff9999;
+}
+
+.search {
+    width: 400px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid #ebebeb;
+    padding: 0 16px;
+    font-size: 14px;
+}
+
+.search-btn {
+    position: absolute;
+    right: 10px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.search-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-item {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.btn-login {
+    background-color: rgb(170, 237, 215);
+    color: #fff;
+    padding: 10px 24px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.main {
+   background: #ffebeb;
+   background: linear-gradient(90deg,rgba(255, 235, 235, 1) 0%, rgba(227, 251, 255, 1) 100%);
+}

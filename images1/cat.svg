@@ -1,0 +1,18 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="300" fill="#FFF5E6" rx="20"/>
+  <!-- Ears -->
+  <polygon points="70,80 110,120 60,140" fill="#D3D3D3"/>
+  <polygon points="230,80 190,120 240,140" fill="#D3D3D3"/>
+  <!-- Face -->
+  <ellipse cx="150" cy="170" rx="100" ry="90" fill="#D3D3D3"/>
+  <!-- Eyes -->
+  <path d="M110 160 Q120 170 130 160" stroke="#333" stroke-width="3" fill="none"/>
+  <path d="M170 160 Q180 170 190 160" stroke="#333" stroke-width="3" fill="none"/>
+  <!-- Nose -->
+  <polygon points="145,180 155,180 150,188" fill="#FFB7B2"/>
+  <!-- Whiskers -->
+  <line x1="80" y1="170" x2="50" y2="165" stroke="#333" stroke-width="2"/>
+  <line x1="80" y1="180" x2="50" y2="180" stroke="#333" stroke-width="2"/>
+  <line x1="220" y1="170" x2="250" y2="165" stroke="#333" stroke-width="2"/>
+  <line x1="220" y1="180" x2="250" y2="180" stroke="#333" stroke-width="2"/>
+</svg>
