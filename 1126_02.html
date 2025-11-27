@@ -3,19 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link ret="stylesheet" href="./css/reset.css">
+    <title>카드만들기</title>
     <style>
-         body {
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
             background-color: #fff;
-    
             padding: 20px;
+            font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
         }
 
         h2 {
             font-size: 20px;
             margin-bottom: 15px;
             color: #000000;
+            font-weight: 700;
+        }
+
+        .container-wrap {
+            display: flex;
+            gap: 30px;
+            flex-wrap: nowrap;
+            margin-bottom: 20px;
         }
 
         .container {
@@ -25,40 +38,155 @@
         }
 
         .container img {
-           width: 147px;
-           height: 147px;
+            border: solid 1px #a7a7a7;
+            width: 194px;
+            height: 194px;
             display: block;
         }
 
         .brand {
-            font-size: 14px;
+            margin: 12px 0 0;
+        }
+
+        .brand a {
+            font-size: 10px;
             color: #666;
-            margin: 10px;
             text-decoration: none;
         }
 
         .title {
-            font-size: 15px;
-            color: #000000;
-            margin: 0 10px 10px 10px;
-        
+            font-size: 14px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin: 8px 0;
+            padding: 0 0 3px 0;
+        }
+
+        .title a {
+            text-decoration: none;
+            color: #000;
         }
 
         .price {
             font-weight: bold;
-            font-size: 17px;
-            margin: 0 10px;
+            font-size: 18px;
             color: #000;
+            margin: 0;
         }
     </style>
 </head>
 <body>
     <h2>인기굿-즈</h2>
-     <div class="container">
-        <img src="./images/v916-nunny-560.jpg" alt="임모지 스티커">
-        <p class="brand"><a href="a">임모지</a></p>
-        <p class="title">임모지 크리에이터 A6 스티커 & 마스킹테이프 set</p>
-        <p class="price">6,500원</p>
+    <div class="container-wrap">
+        <div class="container">
+            <a href="a">
+                <img src="./images/v916-nunny-560.jpg" alt="임모지 스티커">
+            </a>
+            <p class="brand"><a href="a">임모지</a></p>
+            <p class="title"><a href="a">임모지 크리에이터 A6 스티커 & 마스킹테이프 set</a></p>
+            <p class="price">6,500원</p>
+        </div>
+
+        <div class="container">
+            <a href="a">
+                <img src="./images/v916-nunny-560.jpg" alt="임모지 스티커">
+            </a>
+            <p class="brand"><a href="a">임모지</a></p>
+            <p class="title"><a href="a">임모지 크리에이터 A6 스티커 & 마스킹테이프 set</a></p>
+            <p class="price">6,500원</p>
+        </div>
+
+        <div class="container">
+            <a href="a">
+                <img src="./images/v916-nunny-560.jpg" alt="임모지 스티커">
+            </a>
+            <p class="brand"><a href="a">임모지</a></p>
+            <p class="title"><a href="a">임모지 크리에이터 A6 스티커 & 마스킹테이프 set</a></p>
+            <p class="price">6,500원</p>
+        </div>
+
+        <div class="container">
+            <a href="a">
+                <img src="./images/v916-nunny-560.jpg" alt="임모지 스티커">
+            </a>
+            <p class="brand"><a href="a">임모지</a></p>
+            <p class="title"><a href="a">임모지 크리에이터 A6 스티커 & 마스킹테이프 set</a></p>
+            <p class="price">6,500원</p>
+        </div>
+
+        <div class="container">
+            <a href="a">
+                <img src="./images/v916-nunny-560.jpg" alt="임모지 스티커">
+            </a>
+            <p class="brand"><a href="a">임모지</a></p>
+            <p class="title"><a href="a">임모지 크리에이터 A6 스티커 & 마스킹테이프 set</a></p>
+            <p class="price">6,500원</p>
+        </div>
+
+        <div class="container">
+            <a href="a">
+                <img src="./images/v916-nunny-560.jpg" alt="임모지 스티커">
+            </a>
+            <p class="brand"><a href="a">임모지</a></p>
+            <p class="title"><a href="a">임모지 크리에이터 A6 스티커 & 마스킹테이프 set</a></p>
+            <p class="price">6,500원</p>
+        </div>
+    </div>
+    <div class="container-wrap">
+        <div class="container">
+            <a href="a">
+                <img src="./images/v916-nunny-560.jpg" alt="임모지 스티커">
+            </a>
+            <p class="brand"><a href="a">임모지</a></p>
+            <p class="title"><a href="a">임모지 크리에이터 A6 스티커 & 마스킹테이프 set</a></p>
+            <p class="price">6,500원</p>
+        </div>
+
+        <div class="container">
+            <a href="a">
+                <img src="./images/v916-nunny-560.jpg" alt="임모지 스티커">
+            </a>
+            <p class="brand"><a href="a">임모지</a></p>
+            <p class="title"><a href="a">임모지 크리에이터 A6 스티커 & 마스킹테이프 set</a></p>
+            <p class="price">6,500원</p>
+        </div>
+
+        <div class="container">
+            <a href="a">
+                <img src="./images/v916-nunny-560.jpg" alt="임모지 스티커">
+            </a>
+            <p class="brand"><a href="a">임모지</a></p>
+            <p class="title"><a href="a">임모지 크리에이터 A6 스티커 & 마스킹테이프 set</a></p>
+            <p class="price">6,500원</p>
+        </div>
+
+        <div class="container">
+            <a href="a">
+                <img src="./images/v916-nunny-560.jpg" alt="임모지 스티커">
+            </a>
+            <p class="brand"><a href="a">임모지</a></p>
+            <p class="title"><a href="a">임모지 크리에이터 A6 스티커 & 마스킹테이프 set</a></p>
+            <p class="price">6,500원</p>
+        </div>
+
+        <div class="container">
+            <a href="a">
+                <img src="./images/v916-nunny-560.jpg" alt="임모지 스티커">
+            </a>
+            <p class="brand"><a href="a">임모지</a></p>
+            <p class="title"><a href="a">임모지 크리에이터 A6 스티커 & 마스킹테이프 set</a></p>
+            <p class="price">6,500원</p>
+        </div>
+
+        <div class="container">
+            <a href="a">
+                <img src="./images/v916-nunny-560.jpg" alt="임모지 스티커">
+            </a>
+            <p class="brand"><a href="a">임모지</a></p>
+            <p class="title"><a href="a">임모지 크리에이터 A6 스티커 & 마스킹테이프 set</a></p>
+            <p class="price">6,500원</p>
+        </div>
     </div>
 </body>
 </html>
