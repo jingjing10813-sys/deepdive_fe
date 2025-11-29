@@ -15,6 +15,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 18px 20px;
+    width: 1200px;
 }
 
 .logo span {
@@ -30,6 +31,12 @@ body {
     border: 1px solid #ebebeb;
     padding: 0 16px;
     font-size: 14px;
+}
+
+.search-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .search-btn {
@@ -76,4 +83,43 @@ body {
 .main {
    background: #ffebeb;
    background: linear-gradient(90deg,rgba(255, 235, 235, 1) 0%, rgba(227, 251, 255, 1) 100%);
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 80px 40px;
+   gap: 60px;
+}
+
+.main-contents h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 24px;
+
+}
+
+.main-contents p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.main-contents a {
+    font-size: 16px;
+    font-weight: 600;
+    display: inline-block;
+    background-color: #ff9999;
+    padding: 16px 32px;
+    border-radius: 30px;
+    color: #fff;
+    box-shadow: 0 4px 12px #ffc0c0;
+
+}
+
+.main img {
+    width: 500px;
+    height: auto;
+    max-width: 45%;
+    filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.1));
 }

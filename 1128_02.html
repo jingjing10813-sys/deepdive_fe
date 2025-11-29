@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid</title>
+    <style>
+        .container {
+            outline: 1px solid red;
+            display: grid;
+            /* grid-template-columns: 150px 150px 100px; */
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            /* grid-template-columns: repeat(3, minmax(150px, auto)); */
+            grid-template-columns: repeat(2, 1fr);
+            /* grid-template-rows: 100px 200px; */
+            /* grid-auto-rows: 100px 200px; */
+            grid-auto-rows: minmax(100px, auto);
+            gap: 10px;
+        }
+
+        div {
+            background-color: gold;
+            font-size: 20px;
+        }
+
+        div:first-child {
+            /* grid-column: 1/3; */
+            grid-column: span 2;
+        }
+        div:last-child {
+            background-color: olive;
+            grid-column: 2/3;
+            grid-row: 3/5;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Grid</h1>
+    <section class="container">
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis perspiciatis ipsam maiores cupiditate eligendi architecto! Accusamus illum fugiat magnam consequatur voluptate id, corrupti commodi exercitationem libero cumque, voluptatum dignissimos asperiores!</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+        <div>F</div>
+    </section>
+</body>
+</html>
