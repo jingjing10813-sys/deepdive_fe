@@ -10,5 +10,5 @@ const fruits = ["banana", "apple"];
 const newData = numbers.concat(fruits); //배열 2개 합치기
 console.log(newData);
 
-const newData2 = [numbers, fruits];
+const newData2 = [...numbers, ...fruits];
 console.log("newData2 : ", newData2);
