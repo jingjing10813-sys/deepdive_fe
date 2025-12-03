@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="task">
+        <button type ="button" id="addTask">ADD +</button>
+    </div>
+    <h1>My Tasks</h1>
+
+    <ul id="task-container">
+    
+    </ul>
+
+    <script>
+        //init
+        const input = document.getElementById('task')
+        const btnAdd = document.getElementById('addTask')
+        const ul = document.getElementById('task-container')
+        let taskList = []
+
+        //btnAdd버튼을 클릭하면, input의 value값이 console에 찍히도록
+        btnAdd.addEventListener('click', () => {
+            const newTask = input.value.trim();
+
+            //유효성검사, 예외처리
+            if(newTask ==='') {
+                return;
+            }
+            
+            //1. Data update
+            taskList = [...taskList, newTask]
+
+            //2.Rendering Tasks
+            ul.innerHTML = '';
+            taskList.forEach(task => {
+                const li=document.createElement('li');
+                li.textContent = task;
+                ul.appendChild(li)
+            })
+
+            //3. Reset
+            input.value = '';
+        })
+        function readerTask() {
+
+            ul.innerHTML = '';
+              taskList.forEach(task => {
+                  const li=document.createElement('li');
+                  li.textContent = task;
+                  ul.appendChild(li)
+              })
+        }
+        console.log(taskList)
+    </script>
+
+</html>
