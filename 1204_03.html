@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type ="color" id="select-color">
+    <button type="button" id="btn">컬러값출력</button>
+    <p id="msg"></p>
+    <script>
+        //구현 : 버튼을 클릭하면, 선택한 컬러값이 p태그에 출력되도록하세요
+        //구현 2 : 컬러를 변경하면, 문서의 배경색이 바뀌도록 하세요
+        //inint
+        const colorInput = document.getElementById('select-color')
+        const btn = document.getElementById('btn')
+        const msg = document.getElementById('msg');
+        const body =document.body;
+
+        //event
+         btn.addEventListener('click', renderMsg);
+         colorInput.addEventListener('change', changeColor)
+
+        //feature
+         function renderMsg() {
+            msg.textContent = colorInput.value;
+            body.style.backgroundColor = colorInput.value;
+        
+        }
+        function changeColor() {
+            body.style.backgroundColor = colorInput.value;
+        }
+    </script>
+</body>
+</html>

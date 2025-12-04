@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>select 태그 다루기</title>
+</head>
+<body>
+    <h1>배경색을 선택하세요</h1>
+    <select id="color-selector">
+        <option>gold</option>
+        <option>tomato</option>
+        <option>olive</option>
+        <option>teal</option>
+    </select>
+
+    <script>
+        //선택한 색상을 body의 배경색으로 지정한다.
+        //init - getElement
+        const selectColor = document.getElementById('color-selector')
+        const body = document.body;
+
+
+        //event-색상을 선택하면 selec태그의 value값에 변화가 있따면
+        selectColor.addEventListener('change', changeBg )
+        
+
+        //기능 - select태그의 value값을 -> body 배경색으로 지정
+        function changeBg() {
+            const mycolor = selectColor.value;
+            body.style.backgroundColor = mycolor
+        }
+    </script>
+</body>
+</html>
