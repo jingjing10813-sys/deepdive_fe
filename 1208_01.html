@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Timer 함수 연습 </title>
+    <style>
+        #box {
+            width: 300px;
+            height: 300px;
+            border-radius: 20px;
+            border: 3px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <h1> Timer 함수 연습 </h1>
+    <div id="box"></div>
+    <button id = "start">start</button>
+    <button id = "stop">stop</button>
+
+    <script>
+        const box = document.getElementById('box')
+        const startBtn = document.getElementById('start')
+        const stopBtn= document.getElementById('stop')
+        let isGold = false;
+        let timerId = null;
+
+        function toggleColor() {
+            box.style.backgroundColor = isGold ? 'gold':'olive'
+            isGold = !isGold;
+        }
+        startBtn.addEventListener('click', () => {
+            // 만약에 타이머가 실행중이라면 다시 시작하지 않도록 한다.
+            if(timerId !==null) {
+                console.log('타이머가 이미 실행중입니다.')
+                return;
+            }
+            timerId = setInterval(toggleColor, 600)
+            console.log(`타이머 시작 : timerId-${timerId}`)
+        })
+
+        stopBtn.addEventListener('click', () => {
+             if(timerId !==null) {
+                 clearInterval(timerId)
+                 timerId = null;
+                console.log(`타이머 종료 : timerId-${timerId}`)
+            }
+        })
+
+    </script>
+</body>
+</html>
